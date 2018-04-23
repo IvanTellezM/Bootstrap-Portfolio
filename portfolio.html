@@ -1,73 +1,132 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <title>Portfolio</title>
-    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <title>Ivan Tellez Portfolio</title>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="Assets/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 
 <body>
-    <!-- Contains header, about, portfolio, and contact -->
-    <nav class="topbar">
-        <header class="top-line">
-            <h1 class="name">Ivan Tellez</h1>
-            <a class="contact-tab" href="contact.html" target="_blank">Contact</a>
-            <a class="portfolio-tab" href="portfolio.html" target="_blank">Portfolio</a>
-            <a class="about-tab" href="index.html" target="_blank">About</a>
-        </header>
-    </nav>
-    <!-- End of topbar nav -->
-    <!-- Provides a border under the topbar-->
-    <section class="topborderbar">
-    </section>
-    <!-- End of topborderbar section -->
-    <!--Contains midbar section, contact container, and connect with me portion-->
-    <section class="midbar">
-        <div class="container">
-            <div class="about-me-box">
-                <h1 class="about-me">Contact</h1>
-                <form>
-                    <p>Name</p>
-                    <input type="text" placeholder="Ivan Tellez">
-                    <p>Email</p>
-                    <input type="email" placeholder="example.gmail.com">
-                    <p>Message</p>
-                    <textarea class="textarea980" rows="8"></textarea>
-                    <input type="button" value="Submit" class="submit-button">
-                </form>
-            </div>
-            <!-- End of about me box div -->
-            <aside class="connect-box">
-                <h3 class="connect-header">Connect with Me</h3>
-                <div class="connect-img-box">
-                    <div class="imgc1">
-                        <a href="https://github.com/IvanTellezM" target="_blank"><img class="connect-images" alt="github" src="assets/images/github.png"></a>
-                    </div>
-                    <div class="imgc2">
-                        <a href="https://www.linkedin.com/in/ivantellezm" target="_blank"><img class="connect-images" alt="linkedin" src="assets/images/linkedin.png"></a>
-                    </div>
-                    <div class="imgc3">
-                        <a href="https://stackoverflow.com/users/9561369/ivan-tellez" target="_blank"><img class="connect-images" alt="overstack" src="assets/images/overstack.png"></a>
-                    </div>
+
+    <div class="wrapper">
+        <nav class="navbar">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span> 
+		      </button>
+                    <h1>Ivan Tellez</h1>
                 </div>
-            </aside>
-            <!-- End of connect aside -->
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="index.html">About</a></li>
+                        <li class="active"><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+        <div class="container-fluid">
+            <div class="row">
+                <section id="portfolio" class="container col-xl-6 col-lg-6 col-md-9 col-sm-12 col-xs-12">
+                    <div class="content">
+                        <h2>Portfolio</h2>
+                        <hr>
+
+
+                        <div class="row">
+
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <a href="#">
+                                    <img class="img-responsive" src="http://lorempixel.com/output/technics-q-c-960-540-1.jpg">
+                                    <div class="port_name">
+                                        <h4>Hangman</h4>
+                                    </div>
+                                </a>
+                            </div>
+
+
+
+                        </div>
+
+                        <div class="row">
+
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <a href="#">
+                                    <img class="img-responsive" src="http://lorempixel.com/output/technics-q-c-960-540-2.jpg">
+                                    <div class="port_name">
+                                        <h4>RPG Game</h4>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <a href="#">
+                                    <img class="img-responsive" src="http://lorempixel.com/output/technics-q-c-960-540-5.jpg">
+                                    <div class="port_name">
+                                        <h4>Trivia Game</h4>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="row">
+
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <a href="#">
+                                    <img class="img-responsive" src="http://lorempixel.com/output/technics-q-c-960-540-7.jpg">
+                                    <div class="port_name">
+                                        <h4>Rutgers Info Widget</h4>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+
+                                <a href="#">
+                                    <img class="img-responsive" src="http://lorempixel.com/output/technics-q-c-960-540-9.jpg">
+                                    <div class="port_name">
+                                        <h4>Rock Paper Scissors</h4>
+                                    </div>
+                                </a>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </section>
+                <!-- <section class=" container col-md-3 col-sm-0 col-xs-0"></section> -->
+
+
+                <section id="connect" class=" container col-md-3 col-sm-12 col-xs-12">
+                    <div class="connect_margin">
+                        <h3>Connect with Me</h3>
+                        <hr>
+                        <a href="https://github.com/IvanTellezM"><img src="assets/images/github.png" alt="Github" height="60px" width="60px"></a>
+                        <a href="https://www.linkedin.com/in/ivantellezm"><img src="assets/images/linkedin.png" alt="LinkedIn" height="60px" width="60px"></a>
+                        <a href="https://stackoverflow.com/users/9561369/ivan-tellez"><img src="assets/images/overstack.png" alt="StackOverflow" height="60px" width="60px"></a>
+                    </div>
+                </section>
+
+
+            </div>
         </div>
-        <!-- End of container div -->
-    </section>
-    <!-- End of midbar section -->
-    <!--Copyright bar section-->
-    <section class="copyrightbar">
-        <div class="copyright">
-            <p>&#169;Copyright 2016 Ivan Tellez</p>
-        </div>
-        <!-- End of copyright div -->
-    </section>
-    <!-- End of copyrightbar section -->
+
+        <footer>
+            <p><span> &copy; 2017 Coded by Ivan Tellez</span></p>
+        </footer>
+
+    </div>
+
+
 </body>
 
 </html>
-
-© 2018 GitHub, Inc. Terms Privacy Security Status
